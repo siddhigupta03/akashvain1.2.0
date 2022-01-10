@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createSwitchNavigator } from 'react-navigation';
 
@@ -23,17 +24,6 @@ const AppSwitcher = createSwitchNavigator({
 
 const Appcon = createAppContainer(AppSwitcher);
 
-export default class App extends Component{
-  render() {
+export default function App() {
     return <Appcon/>
-  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

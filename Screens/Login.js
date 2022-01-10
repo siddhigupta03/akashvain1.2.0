@@ -8,7 +8,7 @@ import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import { StatusBar } from 'expo-status-bar';
 
-let costom = {
+let customFonts = {
     'Bubblegum-Sans': require("../assets/fonts/BubblegumSans-Regular.ttf")
 }
 
@@ -85,6 +85,7 @@ export default class LoginScreen extends Component {
                 var credential = error.credential;
                 // ...
               });
+              this.props.navigation.navigate('Dashboard')
           } else {
             console.log("User already signed-in Firebase.");
           }

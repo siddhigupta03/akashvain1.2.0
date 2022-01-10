@@ -31,7 +31,7 @@ export default class DrawerNav extends Component {
         let props = this.props
         return(
             <Drawer.Navigator
-                drawerContentOptions={{
+                screenOptions={{
                     activeTintColor: "#e91e63",
                     inactiveTintColor: this.state.light_theme ? "black" : "white",
                     itemStyle: { marginVertical: 5 }
